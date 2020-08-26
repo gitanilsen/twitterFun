@@ -31,7 +31,7 @@ tweetBtn.addEventListener("click", () => {
   var actualChar = tweetText.replace(/ /g, "");
   var errorBox = document.getElementById("error");
   if (tweetText == "") {
-    var errorMsg = "You can't post a tweet empty. Please Write SomeThing.";
+    var errorMsg = "You can't post an empty tweet. Please Write SomeThing.";
     errorBox.innerText = errorMsg;
   } else if (actualChar.length > 279) {
     errorMsg =
