@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Tweet Word Counter</title>
+  </head>
+  <body>
+    <div class="light-box">
+      <div class="close-box">
+        <p id="close-btn" title="Close">X</p>
+      </div>
+      <div class="tweet-container">
+        <span id="char-count"></span>
+        <div></div>
+        <p id="tweet-text"></p>
+      </div>
+    </div>
+    <div class="container">
+      <h2 id="title" style="margin-bottom: 1rem; color: rgb(29, 161, 242)">
+        Start Wirting Your Tweets.
+      </h2>
+
+      <div class="log">
+        <img src="twitter_logo.svg" alt="logo" id="logo-img" />
+      </div>
+      <span id="error"></span>
+      <span id="tool-tip">You Can't Write more than 280 Characters.</span>
+      <textarea
+        name="tweet"
+        id="tweet"
+        cols="30"
+        rows="2"
+        placeholder="What's happening?"
+        required
+        autocomplete="false"
+      ></textarea>
+
+      <button type="submit" class="tweet-btn" id="tweet-btn">Tweet</button>
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
